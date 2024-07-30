@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --primary-color: #030637;
+    --secondary-color: #3C0753;
+    --tertiary-color: #720455;
+    --quaternary-color: #910A67;
+
+    --Kanit-font: "Kanit", sans-serif;
+    --exo2-font: "Exo 2", sans-serif;
+
+
+    --text-color-1: #910A67;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    box-sizing: border-box;
+    background-color: var(--primary-color)
+}
+
+
+
+header {
+    display: flex;
+    padding: 4% 0 0 15%;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.lock-icon {
+    height: 6rem;
+    user-select: none;
+}
+
+h1 {
+    font-family: var(--Kanit-font);
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: var(--text-color-1);
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    padding: 5% 15% 0 15%;
+    gap: 10rem;
+    margin-bottom: 3.2rem;
+}
+
+.input-area, .output-area {
+    flex: 1;
+}
+
+textarea {
+    height: 30rem;
+    width: 100%;
+    padding: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    resize: none;
+    border: 2px solid #e74c3c;
+    background-color: var(--primary-color);
+    text-align: justify;
+    outline: none;
+    color: white;
+    font-family: var(--Kanit-font);
+    font-size: 1.6rem;
+    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.5); 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+textarea:focus {
+    border-color: #c0392b;
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.7);
+}
+
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    min-width: 12rem;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    font-family: var(--exo2-font);
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.05);
+}
+
+.encrypt {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.decrypt {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.copy {
+    margin-top: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--Kanit-font);
+    font-size: 1rem;
+    color: #666;
+    margin-top: 1.3rem;
+    user-select: none;
+}
+
+
+@media (max-width: 1240px) {
+    .container {
+        margin-top: 3rem;
+        padding: 5% 20% 0 15%;
+        flex-direction: column;
+        gap: 6rem;
+    }
+}
+
+
+@media (max-width: 580px) {
+    .buttons {
+        flex-direction: column;       
+        gap: 0rem;      
+    }
+
+}
+
+
+@media (max-width: 520px) {
+    header {
+        flex-direction: column;
+        margin: 2rem 2.6rem 0 0;
+        text-align: center;
+    }
+
+    .container {
+        margin-right: 1.8rem;
+    }
+}
