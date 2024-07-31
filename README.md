@@ -28,8 +28,6 @@ Posteriormente, se mostrara el mensaje encriptado. puedes copiar este mensaje pr
 Para instalar y usar este proyecto, puedes seguir estos pasos:
 
  1. Clona el repositorio:
-    ~~~bash
-   ~~~
    git clone https://github.com/brayan108/Alura-Challenge-Encriptador-de-Texto.git
 
 2. Ve a la ubicación donde lo clonaste y abre el archivo "index.html".   
